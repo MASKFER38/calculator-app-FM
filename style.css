@@ -1,0 +1,55 @@
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+} */
+.container {
+    position: absolute;
+    color: #cacaca;
+    background-color:hsl(222, 26%, 31%);
+    width: 357px;
+    height: 667px;
+
+}
+.boxTop {
+    position: absolute;
+    top: 0px;
+    background-color:grey;
+    width: 357px;
+    height:87px;
+}
+.boxCalc {
+  position: absolute;
+  top: 87px;
+  background-color:rgb(144, 97, 97);
+  width: 357px;
+  height: 118px;
+}
+.boxButtons{
+  position: absolute;
+  top: 205px;
+  background-color:rgb(42, 161, 161);
+  width: 357px;
+  height: 462px;
+}
+.boxTopCalc{
+  
+  background-color:hsl(222, 26%, 31%);
+  width: 30%;
+  height:87px;
+
+}
+.boxTopTheme{
+
+  background-color:hsl(222, 26%, 31%);
+  width: 30%;
+  height:87px;
+
+}
+.boxTopSwitch{
+
+  background-color:hsl(222, 26%, 31%);
+  width: 30%;
+  height:87px;
+
+}
