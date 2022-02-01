@@ -12,6 +12,7 @@ body {
 
 }
 .boxTop {
+    display:flex;
     position: absolute;
     top: 0px;
     background-color:grey;
@@ -33,23 +34,24 @@ body {
   height: 462px;
 }
 .boxTopCalc{
-  
-  background-color:hsl(222, 26%, 31%);
-  width: 30%;
-  height:87px;
-
+  width: 40%;
+  background-color:rgb(255, 37, 164);
 }
 .boxTopTheme{
-
-  background-color:hsl(222, 26%, 31%);
-  width: 30%;
-  height:87px;
-
+  width: 26%;
+  background-color:rgb(113, 37, 255);
 }
 .boxTopSwitch{
+  width: 34%;
+  background-color:rgb(37, 150, 255);
 
-  background-color:hsl(222, 26%, 31%);
-  width: 30%;
+}
+.boxTopCalc,.boxTopTheme,.boxTopSwitch{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  border-color: chartreuse;
   height:87px;
 
 }
