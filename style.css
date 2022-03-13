@@ -3,108 +3,116 @@ body {
   margin: 0;
   padding: 0;
 } */
-.container {
-    position: absolute;
-    color: #cacaca;
-    background-color:hsl(222, 26%, 31%);
-    width: 357px;
-    height: 667px;
 
+.container {
+  position: absolute;
+  color: #cacaca;
+  background-color: hsl(222, 26%, 31%);
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+  max-width: 536px;
+  min-height: 667px;
+  max-height: 767px;
 }
 .boxTop {
-    display:flex;
-    position: absolute;
-    top: 0px;
-    background-color:grey;
-    width: 357px;
-    height:87px;
-}
-.boxCalc {
-  position: absolute;
-  top: 87px;
-  background-color:rgb(144, 97, 97);
-  width: 357px;
-  height: 118px;
+  display: grid;
+  grid-template-columns: 50% 20% 30%;
+  top: 0px;
+  background-color: grey;
+  width: 100%;
+  height: 87px;
+
 }
   .boxResult{
+    display: grid;
+    justify-content: flex-end;
     position: absolute;
-    right: 1%;
-    bottom:50%;   
+    margin-top: 5px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: hsl(268, 71%, 12%);
+    border: solid hsl(268, 71%, 12%) 24px;
+    border-radius: 10px;
+    width: 87%;
+    font-family: 'Spartan', sans-serif;
+    font-size: 32px;
+    top: 87px;
   }
 .boxButtons{
-  width: 85%;
-  height: 62.5%;
-  margin: auto;
-  margin-left: auto;
-  
-  padding-top: 15px;
-  padding-left: 5px;
-  border: 20px ;
-  border-radius:13px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   position: relative;
-  
-  top: 29%;
-  background-color:rgb(42, 161, 161);
+  margin-top: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 87%;
+  height: 59%;
+  background-color: hsl(268, 71%, 12%);
+  border: solid hsl(268, 71%, 12%) 24px;
+  border-radius: 10px;
+
 }
-.boxTopCalc{
-  width: 40%;
-  background-color:rgb(255, 37, 164);
-}
+  .number .delete-button, .operator-button {
+    grid-column: 1 / 4;
+    grid-row: 1;  
+  }
+  .reset-button{
+    grid-column: 1 / 3;
+    grid-row: 5;
+  }
+  .equal-button{
+    grid-column: 3 / -1;
+    grid-row: 5;
+  }
+  .number, .operator-button, .reset-button, .equal-button{
+    border-radius: 7px;
+    border-color: transparent;
+    font-family: 'Spartan', sans-serif;
+    font-size: 19px;
+    margin: 8px;
+  }
+  .number, .operator-button{
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+  }
+  .reset-button, #delete-button{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+  }
+  .equal-button{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
+  }
+  .reset-button, #delete-button, .equal-button{
+    color: white;
+  }
+
 .calcTxt{
-   position: relative;
-   font-size: 24px;
-   font-weight: bold;
-   font-family: "Helvetica Neue",Helvetica,Arial;
-   top: 32%;
-   left: 15%
+  grid-row: 1;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+
  }
-.boxTopTheme{
-  width: 26%;
-  background-color:rgb(113, 37, 255);
-}
   .themeTxt{
-    position: relative;
+    grid-row: 1;
+    width: 100%;
     font-size: 12px;
     font-family: "Helvetica Neue",Helvetica,Arial;
-    left: 45px;
-    top: 40px;
   }
-.boxTopSwitch{
-  width: 34%;
-  background-color:rgb(37, 150, 255);
-}
     .switchTxt{
-      position: relative;
+      grid-row: 1;
+      width: 100%;
       font-size: 12px;
       font-weight: bold;
       font-family: "Helvetica Neue",Helvetica,Arial;
-      left: 70px;
-      top: 25px;
+
   }
 .boxTopCalc,.boxTopTheme,.boxTopSwitch{
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
+
   border-color: chartreuse;
   height:87px;
-
-}
-.btnValue {
-  width: 60px;
-  height: 60px;
-}
-#btnValueRectangle {
-  width: 133.4px;
-  height: 60px;
-}
-.btnValue, .btnValueRectangle{
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin: 1.3%;
-  margin-bottom: 2.3%;
-  border-radius: 5px;
-  background-color: whitesmoke;
-  box-shadow: 0 5px 0 0 rgb(182, 182, 182);  
 }

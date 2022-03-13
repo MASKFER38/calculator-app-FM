@@ -1,8 +1,9 @@
-const resetButton = document.getElementById('btnValueRectangle');
-// const equalButton = document.getElementById('btnValueRectangle');
+const resetButton = document.getElementById('reset-button');
+const equalButton = document.getElementById('equal-button');
 const deleteButton = document.getElementById('delete-button');
 const screen = document.getElementById('screen');
 const numberButtons = document.querySelectorAll('#number');
+const operationButtons = document.querySelectorAll('#operator-button')
 
 var variables = ['',''];
 var operator = '';
@@ -27,10 +28,20 @@ function del(){
     }
 }   
 
+function calculate(){
+    var res = eval(variables[0] + operator + variables[1]);
+    operator = '';
+    variables[1] ='';
+    variables[0] = res;
+    id = 0;
+    updateScreen();
+    variables[0] = '';
+}
+
 resetButton.addEventListener('click', reset);
 
 numberButtons.forEach(button => {
-    button.addEventListener('click',() =>{
+    button.addEventListener('click', () => {
         const regexp = /^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$/;
         
         if( regexp.test(variables[id]+button.innerText)){
@@ -40,3 +51,25 @@ numberButtons.forEach(button => {
     });
 });
 deleteButton.addEventListener('click', del);
+
+operationButtons.forEach(button => {
+    button.addEventListener('click', ()=> {
+        if(variables[0] === '' && screen.innerText !== '0'){
+            variables[0] = screen.innerText;
+        }
+        id++;
+        switch(button.innerText){
+            case '+':
+            case '-':
+            case '/':
+                operator = button.innerText;
+                break;
+            case '*':
+                operator ='*';
+
+        }
+        console.log('variables: ', variables, ' id: ', ' operator: ', operator);
+    })
+})
+
+equalButton.addEventListener('click', calculate); 
