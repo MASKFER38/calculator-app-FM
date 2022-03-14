@@ -17,7 +17,7 @@ function reset(){
 
 function updateScreen(){
     if(variables[id] === '') {
-        screen.innerText ='0';
+        screen.innerText ='_';
     } else {screen.innerText = variables[id];}
 }
 
@@ -64,7 +64,7 @@ operationButtons.forEach(button => {
             case '/':
                 operator = button.innerText;
                 break;
-            case '*':
+            case 'X':
                 operator ='*';
 
         }
