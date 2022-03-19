@@ -1,75 +1,100 @@
-/* html,
+html,
 body {
   margin: 0;
   padding: 0;
-} */
+}
 
 .container {
   position: absolute;
-  color: #cacaca;
-  background-color: hsl(222, 26%, 31%);
   width: 100%;
   height: 100%;
   min-width: 375px;
   max-width: 536px;
   min-height: 667px;
   max-height: 767px;
+  color: #ffffff;
 }
 .boxTop {
   display: grid;
   grid-template-columns: 187.5px 187.5px;
   justify-content: space-between;
-  background-color: grey;
   width: 100%;
   height: 87px;
 }
-  .positionSwitch{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 52px;
-  }
-  p{
+  .calcTxt{
     position: absolute;
-    top: -42px;
-    right: 4px;
+    top: 27px;
+    width: 100%;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: "Century Gothic",Helvetica,Arial;
   }
+.positionSwitch{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 46px;
+  grid-column: 2;
+  font-family: 'Spartan', sans-serif;
+}
+p{
+  letter-spacing: 5px;
+  position: absolute;
+  top: -31px;
+  right: 3px;
+  font-size: 13px;
+  }
+.theme{
+  position: absolute;
+  right: 94px;
+  top: 7px;
+  font-size: 13px;
+}
 
   .switchBox{
+    display: flex;
+    justify-content: space-evenly;
     width: 70px;
     height: 26px;
     border-radius: 35px;
-    background-color: hsl(223, 31%, 20%)
+    background-color: hsl(223, 31%, 20%);
   }
-    .switchColor {
-      margin: 2px;
-      margin-right: 1px;
-      width: 22px;
-      height: 22px;
-      border-radius: 35px;
-      background-color: hsl(6, 63%, 50%)
-    }
+  .switchColor1{
+    background-color: hsl(6, 63%, 50%);
+  }
+  .switchColor1, .switchColor2, .switchColor3 {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 4px;
+    border-radius: 35px;
+  }
   .boxResult{
     display: grid;
     justify-content: flex-end;
-    width: 87%;
-    top: 87px;
-    margin-top: 5px;
-    margin-left: auto;
-    padding: 24px;
+    position: sticky;
+    width: 100%;
+    height: 92px;
+    top: 103px;
     background-color: hsl(224, 36%, 15%);
     border-radius: 10px;
     font-family: 'Spartan', sans-serif;
     font-size: 32px;
   }
+  .imputN{
+    position: relative;
+    top: 28px;
+    right: 24px;
+  }
+
+
 .boxButtons{
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 87%;
-  height: 59%;
-  margin-top: 23px;
-  margin-left: auto;
-  padding: 24px;
+  width: 100%;
+  height: 412px;
+  top: 216px;
   background-color: hsl(223, 31%, 20%);
   border-radius: 10px;
 }
@@ -89,13 +114,17 @@ body {
     border-radius: 7px;
     border-color: transparent;
     font-family: 'Spartan', sans-serif;
-    font-size: 19px;
+    font-size: 22px;
     margin: 8px;
+    line-height: 1px;
   }
   .number, .operator-button{
     background-color: hsl(30, 25%, 89%);
     box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
     color: hsl(221, 14%, 31%);
+  }
+  .Ncolor{
+    font-size: 32px;
   }
   .reset-button, #delete-button{
     background-color: hsl(225, 21%, 49%);
@@ -106,26 +135,6 @@ body {
     box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
   }
   .reset-button, #delete-button, .equal-button{
-    color: white;
+    color: hsl(0, 0%, 100%);
   }
 
-.calcTxt{
-  grid-row: 1;
-  width: 100%;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Helvetica Neue",Helvetica,Arial;
-
- }
-  .themeTxt{
-    grid-row: 1;
-    width: 100%;
-    font-size: 12px;
-    font-family: "Helvetica Neue",Helvetica,Arial;
-  }
-
-.boxTopCalc,.boxTopTheme{
-
-  border-color: chartreuse;
-  height:87px;
-}
