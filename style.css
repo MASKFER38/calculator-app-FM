@@ -15,7 +15,6 @@ body {
   color: #ffffff;
 }
 .boxTop {
-  display: grid;
   grid-template-columns: 187.5px 187.5px;
   justify-content: space-between;
   width: 100%;
