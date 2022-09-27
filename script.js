@@ -89,8 +89,10 @@ const numberBtns = document.querySelectorAll('.Ncolor');
 
 
 function Theme1() {
-    body.style.backgroundColor = "hsl(222, 26%, 31%)";
+    body.style.backgroundColor = "hsl(207, 70%, 44%)";
     topColor.style.color ="#ffffff";
+    topColor.style.backgroundColor ="hsl(221, 27%, 31%)";
+    topColor.style.border ="11px solid hsl(221, 27%, 31%)";
     switchBox.style.backgroundColor = "hsl(223, 31%, 20%)"; 
     switchTheme1.style.backgroundColor = "hsl(6, 63%, 50%)";
     switchTheme2.style.backgroundColor = "hsl(223, 31%, 20%)";
@@ -112,8 +114,10 @@ function Theme1() {
   }
 
 function Theme2() {
-  body.style.backgroundColor = "hsl(0, 0%, 90%)";
+  body.style.backgroundColor = "hsl(207, 70%, 44%)";
   topColor.style.color ="hsl(0, 0%, 11%)";
+  topColor.style.backgroundColor ="hsl(0, 0%, 90%)";
+  topColor.style.border ="11px solid hsl(0, 0%, 90%)";
   switchBox.style.backgroundColor = "hsl(0, 5%, 81%)"; 
   switchTheme1.style.backgroundColor = "hsl(0, 5%, 81%)";
   switchTheme2.style.backgroundColor = "hsl(25, 98%, 40%)";
@@ -135,8 +139,10 @@ function Theme2() {
 }
 
 function Theme3() {
-    body.style.backgroundColor = "hsl(268, 75%, 9%)";
+    body.style.backgroundColor = "hsl(207, 70%, 44%)";
     topColor.style.color ="hsl(52, 100%, 62%)";
+    topColor.style.backgroundColor ="hsl(268, 74%, 9%)";
+    topColor.style.border ="11px solid hsl(268, 74%, 9%)";
     switchBox.style.backgroundColor = "hsl(268, 71%, 12%)"; 
     switchTheme1.style.backgroundColor = "hsl(268, 71%, 12%)";
     switchTheme2.style.backgroundColor = "hsl(268, 71%, 12%)";

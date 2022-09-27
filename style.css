@@ -17,6 +17,9 @@ body {
   min-height: 667px;
   max-height: 767px;
   color: #ffffff;
+  background-color: hsl(221, 27%, 31%);
+  border: 11px solid rgb(58, 71, 100);
+  border-radius: 10px;
 }
 .boxTop {
   grid-template-columns: 187.5px 187.5px;
